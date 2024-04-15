@@ -40,14 +40,20 @@ class _loginpageState extends State<loginpage>{
   Widget build(BuildContext context){
     return Scaffold(
       appBar: AppBar(
-          title: Text('Login'),
+          backgroundColor: Colors.blue,
+          elevation: 0,
+          title: Text('Login',
+            style: TextStyle(
+              fontSize: 20,
+              fontWeight: FontWeight.bold,
+            ),),
           leading: BackButton(
             onPressed: ()=> Navigator.of(context).pop(),
           )
       ),
       body: Center(
           child: SingleChildScrollView(
-            padding: EdgeInsets.all(20.0),
+            padding: EdgeInsets.all(50.0),
             child: Form(
               key: _formKey,
               child:Column(

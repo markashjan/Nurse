@@ -550,7 +550,13 @@ class _AppointmentPageState extends State<Appointment> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Appointment'),
+        backgroundColor: Colors.blue,
+        elevation: 0,
+        title: const Text('Appointment',
+          style: TextStyle(
+            fontSize: 20,
+            fontWeight: FontWeight.bold,
+          ),),
         leading: BackButton(
           onPressed: () => Navigator.of(context).pop(),
         ),

@@ -507,7 +507,13 @@ class _PharmacyPageState extends State<Pharmacy> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Pharmacy'),
+        backgroundColor: Colors.blue,
+        elevation: 0,
+        title: const Text('Pharmacy',
+          style: TextStyle(
+            fontSize: 20,
+            fontWeight: FontWeight.bold,
+          ),),
         leading: BackButton(
           onPressed: ()=>Navigator.of(context).pop(),
         ),

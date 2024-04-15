@@ -478,7 +478,13 @@ class _HealthRecordsPageState extends State<HealthRecordsPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Health Records'),
+        backgroundColor: Colors.blue,
+        elevation: 0,
+        title: const Text('Health Records',
+          style: TextStyle(
+            fontSize: 20,
+            fontWeight: FontWeight.bold,
+          ),),
         leading: BackButton(
           onPressed: ()=>Navigator.of(context).pop(),
         ),
