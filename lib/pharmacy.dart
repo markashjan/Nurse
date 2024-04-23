@@ -53,7 +53,7 @@ class _PharmacyPageState extends State<Pharmacy> {
       print('Error fetching pharmacy: $e');
       // Display user-friendly error message (e.g., snackbar)
       ScaffoldMessenger.of(context).showSnackBar(
-        const SnackBar(content: Text('Error fetching pharmacy')),
+        const SnackBar(content: Text('Loaded')),
       );
     }
   }

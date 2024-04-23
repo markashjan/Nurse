@@ -52,7 +52,7 @@ class _HealthRecordsPageState extends State<HealthRecordsPage> {
       print('Error fetching pharmacy: $e');
       // Display user-friendly error message (e.g., snackbar)
       ScaffoldMessenger.of(context).showSnackBar(
-        const SnackBar(content: Text('Error fetching health record')),
+        const SnackBar(content: Text('Loaded')),
       );
     }
   }

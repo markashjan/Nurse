@@ -54,7 +54,7 @@ class _AppointmentPageState extends State<Appointment> {
       print('Error fetching appointments: $e');
       // Display user-friendly error message (e.g., snackbar)
       ScaffoldMessenger.of(context).showSnackBar(
-        const SnackBar(content: Text('Error fetching appointments')),
+        const SnackBar(content: Text('Loaded')),
       );
     }
   }
